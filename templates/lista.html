@@ -1,1 +1,38 @@
 {% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Lista de Operarios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>DNI</td>
+                            <td>Nro Celular</td>
+                            <td>Email</td>
+                            <td></td>
+                            </tr>
+
+                            {%for c in lista %}
+                            <tr>
+                            <td>{{c.nombre}}</td>
+                            <td>{{c.apellido}}</td>
+                            <td>{{c.dni}}</td>
+                            <td>{{c.celular}}</td>
+                            <td>{{c.mail}}</td>
+                            <td></td>
+                            </tr>
+                            {%endfor%}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
