@@ -1,0 +1,132 @@
+<!--{% load static %}
+{% load crispy_forms_tags %}-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+{% block header %}{% endblock %}
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+      
+      <style>
+
+        .navbar .navbar-brand {
+            font-size: 25px;
+            margin-right: 20px;
+        }
+        .bg-dark {
+          background-image: var(--bs-gradient);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <div class="container-fluid" >          
+          <a class="navbar-brand">StockMat</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Lista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/ingresa">Ingreso</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/busca">Buscar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+{% block content %}{% endblock %}
+
+<!--  <scr>  --> 
+  <footer class="bg-dark text-center text-white footer-expand-last">
+    <!-- Grid container -->
+    <div class="container pb-0">
+      <!-- Section: Social media -->
+      <section>
+        <!-- Facebook ACA EMPIEZA EL CODIGO A CORREGIR--> 
+        <!--
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <! Twitter 
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <! Google 
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <! Instagram 
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <! Linkedin 
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <! Github 
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #333333;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+        ACA TERMINA LO ESCRIPEADO-->
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="mail:gastoncolque@gmail.com">gastoncolque@gmail.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+{% block footer %}{% endblock %}
+
+
+</html>
