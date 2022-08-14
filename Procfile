@@ -1,0 +1,1 @@
+web: gunicorn stockropa.wsgi --log-file -
