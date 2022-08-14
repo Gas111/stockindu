@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf import settings
 from django.conf.urls.static import static
-
+from stock.views import busca
+from stock.views import ingresa
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('stock.urls')),
+    path('busca/', busca),
+    path('ingresa',ingresa),
 ]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
