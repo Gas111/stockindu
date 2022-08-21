@@ -1,36 +1,30 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+
 {% block content %}
-
-{% comment %} el contenido centrado {% endcomment %}
-  {% comment %}  <div class=form-group> {% endcomment %}
- {% comment %} el contenido centrado  <form method="POST">{% endcomment %} 
-  
-  
-  <form action="" method="POST">
-  <div class="container">
-            <div class="row mb-2 mt-4">
-              <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                {{form.as_p}}
-                {% csrf_token %}
-              </div>
-            </div>
-            <!--{{form.as_p}}-->   
-              <div class="row mb-5">
-            <button class="btn btn-secondary" type="submit">Ingresa</button>
-              </div>
-</div>
+<form action="" method="POST">
+  <div class="container-fluid" style="height:90vh;">
+    <div class="row mb-1 mt-1">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        {{form.as_p}}
+        {% csrf_token %}
+      </div>
+    </div>
+    <div class="row mb-1 mt-1"style="">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <button class="btn btn-secondary" type="submit">Ingresa</button>
+        </div>
+    </div>
+  </div>
 </form>
+<p></p>
 <script>
-
     // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
     'use strict'
-  
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
+   // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
       form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
@@ -42,14 +36,6 @@
       }, false)
     })
   })()
-
 </script>
-
-
-
-
-
-
-
 
 {% endblock%}

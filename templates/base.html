@@ -11,26 +11,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>listas</title>
 {% block header %}{% endblock %}
-<link rel="stylesheet"
+  <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous">
       <!--25px;20px-->
+  <link rel="stylesheet" href="static/css/styles.css">
+
       
     
       <style>
         .navbar .navbar-brand {
             font-size: 150%;
-            margin-right: 5%;
-        }
+            margin:0;
+          }
         .bg-dark {
           background-image: var(--bs-gradient);
         }
+        .body{
+          display:flex;
+          margin:0;
         
+          height:80vh;
+        }
+        a{
+          text-decoration:none;
+          color:white;
+        }
+        .footer
+        {
+          min-height:30vh;
+          display:flex;
+        }
+        .row
+        {
+          min-height:75vh;
+        }
+        .button
+        {
+          margin:0;
+          padding:0;
+        }
+
 
     </style>
 </head>
-<body>
+<body class="min-vh-60">
     <nav class="navbar navbar-expand-lg bg-dark text-white">
         <div class="container-fluid" >          
           <a class="navbar-brand">StockMat</a>
@@ -50,6 +76,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/busca">Buscar</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/admin">Admin</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -57,9 +86,9 @@
 {% block content %}{% endblock %}
 
 <!--  <scr>  --> 
-  <footer class="bg-dark text-center text-white footer-expand-last">
+  <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
-    <div class="container fluid pb-0">
+    <div class="container-fluid">
       <!-- Section: Social media -->
       <section>
         <!-- Facebook ACA EMPIEZA EL CODIGO A CORREGIR--> 
@@ -123,7 +152,7 @@
   
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
+      © 2022 Copyright:
       <a class="text-white" href="mail:gastoncolque@gmail.com">gastoncolque@gmail.com</a>
     </div>
     <!-- Copyright -->
