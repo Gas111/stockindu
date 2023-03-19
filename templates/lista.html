@@ -10,6 +10,9 @@
                         <tr>
                             <th>Nombre</th>
                             <th>Apellido</th>
+                            <th>Dni</th>
+                            <th>Celular</th>
+                            <th>Email</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -17,12 +20,9 @@
                             {%for c in lista %}
                             <td>{{c.nombre}}</td>
                             <td>{{c.apellido}}</td>
-                        <!--<td>{{c.dni}}</td>-->
-                        <!--<td>{{c.celular}}</td>-->
-                        <!--<td>{{c.mail}}</td>-->         
-                        <!--<td>{{c.dni}}</td>-->
-                        <!--<td>{{c.celular}}</td>-->
-                        <!--<td>{{c.mail}}</td>-->
+                            <td>{{c.dni}}</td>
+                            <td>{{c.celular}}</td>
+                            <td>{{c.mail}}</td>
                             <td></td>
                             </tr>
                             {%endfor%}
