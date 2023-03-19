@@ -1,1 +1,0 @@
-web: gunicorn stockindu.wsgi --log-file -
